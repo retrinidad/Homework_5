@@ -1,4 +1,3 @@
-import java.util.Scanner;
 
 public class DecoratorPatternDriver {
     public static void main(String[] args){
@@ -12,7 +11,7 @@ public class DecoratorPatternDriver {
 
         double firstOrderDiscount = currentAccount.askToUseDiscount(firstOrder);
 
-        System.out.println("Your order total will come to " + (firstItem.cook() + secondItem.cook() - firstOrderDiscount));
+        System.out.println("Your order total will come to $" + (firstItem.cook() + secondItem.cook() - firstOrderDiscount));
 
         currentAccount.addOrderToLoyaltyAccount(firstOrder);
 
@@ -25,11 +24,9 @@ public class DecoratorPatternDriver {
 
         double secondOrderDiscount = currentAccount.askToUseDiscount(secondOrder);
 
-        System.out.println("second order total " + secondOrder.TotalPrice);
-        System.out.println("Your order total will come to " + (thirdItem.cook() + fourthItem.cook() - secondOrderDiscount));
+        System.out.println("Your order total will come to $" + (thirdItem.cook() + fourthItem.cook() - secondOrderDiscount));
 
         currentAccount.addOrderToLoyaltyAccount(secondOrder);
 
-        System.out.println(currentAccount.points_amount);
     }
 }
