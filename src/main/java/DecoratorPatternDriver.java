@@ -9,7 +9,7 @@ public class DecoratorPatternDriver {
         firstOrder.addItem(firstItem);
         firstOrder.addItem(secondItem);
 
-        double firstOrderDiscount = currentAccount.askToUseDiscount(firstOrder);
+        double firstOrderDiscount = currentAccount.UseDiscount(firstOrder);
 
         System.out.println("Your order total will come to $" + (firstItem.cook() + secondItem.cook() - firstOrderDiscount));
 
@@ -22,7 +22,7 @@ public class DecoratorPatternDriver {
         secondOrder.addItem(thirdItem);
         secondOrder.addItem(fourthItem);
 
-        double secondOrderDiscount = currentAccount.askToUseDiscount(secondOrder);
+        double secondOrderDiscount = currentAccount.UseDiscount(secondOrder);
 
         System.out.println("Your order total will come to $" + (thirdItem.cook() + fourthItem.cook() - secondOrderDiscount));
 

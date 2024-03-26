@@ -18,7 +18,7 @@ public class CustomerLoyalty {
         return this.points_amount;
     }
 
-    public double askToUseDiscount(FoodOrder order){
+    public double UseDiscount(FoodOrder order){
         if(points_amount > 0) {
             System.out.println("Would you like to use your membership loyalty point discount? ");
             Scanner scanner = new Scanner(System.in);
